@@ -1,0 +1,110 @@
+/* Additional styles for the "flipcart" theme */
+
+/* Header styles */
+.header {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navigation styles */
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #007bff; /* Change link color on hover */
+}
+
+/* Cart icon styles */
+.cart-icon {
+  font-size: 24px;
+  color: #333;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon:hover {
+  color: #ff5555; /* Change cart icon color on hover */
+}
+
+/* Cart count badge styles */
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ffe555;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Product card styles */
+.product-card {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+  width: 250px;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #ff5555;
+  margin-bottom: 10px;
+}
+
+/* Add to cart button styles */
+.add-to-cart-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #0056b3; /* Darken the button on hover */
+}

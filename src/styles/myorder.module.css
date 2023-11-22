@@ -1,0 +1,88 @@
+/* ============================== MyOrder.js =========================== */
+
+/* main container of the page */
+.mainContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* heading of the page */
+  .orderHeading {
+    color: #E96D71;
+  }
+  
+  /* list of all the orders in the user's database */
+  .orderListContainer {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Single order container (flip card) */
+  .order-card {
+    position: relative;
+    width: calc(33.33% - 20px); /* Set the desired card width */
+    margin: 10px;
+    perspective: 1000px; /* Define the 3D perspective */
+    cursor: pointer;
+  }
+  
+  /* Front of the order card */
+  .order-front, .order-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s; /* Add a smooth flip transition */
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 2px grey;
+    background-image: linear-gradient(120deg, #ffefbe 0%, #fbc1b0 100%);
+  }
+  
+  /* Back of the order card */
+  .order-back {
+    transform: rotateY(180deg); /* Initially hide the back side */
+  }
+  
+  /* Hover effect for the order card */
+  .order-card:hover .order-front {
+    transform: rotateY(180deg);
+  }
+  
+  .order-card:hover .order-back {
+    transform: rotateY(0deg);
+  }
+  
+  /* Add your existing styles for links here */
+  .mainContainer a {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    font-weight: 700;
+    color: #cb75c8;
+  }
+  
+  /* ================================ OrderList.js ========================== */
+  
+  /* table inside the order list */
+  table {
+    width: 100%;
+    font-weight: 600;
+    border-collapse: collapse;
+    color: #E96D71;
+  }
+  
+  /* table's cell style */
+  th, td {
+    background-color: transparent;
+    border: 2px solid black;
+  }
+  
+  /* table heading color */
+  th {
+    color: #5f5569;
+  }
+  

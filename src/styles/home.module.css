@@ -1,0 +1,173 @@
+/* ============================== Home.js ================================= */
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Search bar */
+  .header input {
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+    padding: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Apply filter button */
+  .header button {
+    float: right;
+    margin-right: 5%;
+    height: 40px;
+    width: 120px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: none;
+    background-color: #ff6b00;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* ============================ FilterBar.js ==================== */
+  
+  /* Filter bar styles */
+  .filterBar {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    font-size: 1.2rem;
+    background-color: white;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    color: #ff6b00;
+    border-radius: 4px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Filter bar heading */
+  .filterBar h1 {
+    color: #ff6b00;
+  }
+  
+  /* Sub heading inside filter bar */
+  .filterBar span {
+    color: #ff6b00;
+  }
+  
+  /* Price range to filter items */
+  .priceRange {
+    text-align: center;
+  }
+  
+  /* Price range slider */
+  .priceRange input {
+    width: 100%;
+    height: 5px;
+  }
+  
+  /* Category of the products */
+  .categoryBox {
+    display: flex;
+  }
+  
+  /* Radio buttons inside category */
+  .categoryBox input {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  
+  /* =========================== MainContent.js =================== */
+  
+  /* Container for all the products */
+  .itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4%;
+  }
+  
+  /* =========================== ItemCard.js =========================== */
+  
+  /* Single item container */
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 2%;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  /* Image container of product */
+  .imageContainer {
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Image within the container */
+  .imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Product description */
+  .itemInfo {
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Container of name and price */
+  .namePrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Name of the product */
+  .name {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* Price of the product */
+  .price {
+    color: #ff6b00;
+  }
+  
+  /* Button container within the item */
+  .btnContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  /* Add to cart button */
+  .addBtn {
+    flex-grow: 1;
+    height: 40px;
+    background-color: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Add button on hovering over it */
+  .addBtn:hover {
+    background-color: #ff4500;
+  }
+  
